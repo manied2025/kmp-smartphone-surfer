@@ -1,0 +1,28 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #d0ecff;
+    text-align: center;
+}
+.screen {
+    display: none;
+    padding: 20px;
+}
+#start-screen, #game-over-screen {
+    display: block;
+}
+.logo {
+    max-width: 200px;
+    margin: 20px auto;
+}
+canvas {
+    display: none;
+    background: linear-gradient(#87CEEB, #ffffff);
+    border: 2px solid #000;
+}
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+}

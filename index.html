@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Straßenkehrer – Canvas Spiel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <h1>Straßenkehrer</h1>
+      <p>
+        Kehre so viel Müll wie möglich weg, sammle Müllhaufen ein und springe über große
+        Hindernisse.
+      </p>
+      <div class="hud" aria-live="polite">
+        <span>Punkte: <strong id="score">0</strong></span>
+        <span>Bestwert: <strong id="highscore">0</strong></span>
+        <span>Leben: <strong id="lives">3</strong></span>
+      </div>
+      <canvas
+        id="gameCanvas"
+        width="900"
+        height="420"
+        role="img"
+        aria-label="Canvas Spiel Straßenkehrer"
+      ></canvas>
+      <div class="controls">
+        <p><strong>Steuerung:</strong> ← → bewegen, Leertaste/↑ springen, Enter neu starten</p>
+      </div>
+      <button id="restartButton" type="button">Neues Spiel</button>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
